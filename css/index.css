@@ -1,8 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@font-face {
+    font-family: 'Gilmer Bold';
+    src: url(D:/src/GilmerRegular.otf);
+}
+
+@font-face {
+    font-family: 'Gilmer Light';
+    src: url(D:/src/GilmerLight.otf);
+}
+
+@font-face {
+    font-family: 'Gilmer Medium';
+    src: url(D:/src/GilmerMedium.otf);
+}
+
+@font-face {
+    font-family: 'Gilmer';
+    src: url(D:/src/GilmerRegular.otf);
+}
+
 * {
     transition: all ease .2s;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Gilmer', sans-serif;
     margin: auto;
     padding: 0;
 }
@@ -14,6 +34,13 @@ a {
 
 h1 {
     font-size: 3.6em;
+}
+
+h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+    margin: 0;
+    margin-block-start: 0;
 }
 
 h4 {
@@ -44,12 +71,22 @@ body {
     overflow-x: hidden;
 }
 
+select {
+    width: 80px;
+}
+
 .side-menu {
     position: fixed;
     float: left;
     height: 100%;
     width: 16vw;
     background-color: #4e4e4e;
+}
+
+.workamp-text {
+    margin-top: 1em;
+    width: 60%;
+    font-weight: 700;
 }
 
 .menu-select {
@@ -85,6 +122,7 @@ body {
     padding-left: 20px;
     vertical-align: center;
     line-height: 2em;
+    font-weight: 500;
 }
 
 .icon {
@@ -98,7 +136,6 @@ body {
 }
 
 .cards-list {
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -108,7 +145,7 @@ body {
 .card {
     float: left;
     position: relative;
-    width: 55vw;
+    max-width: 55vw;
     max-height: 30vw;
     border: 1px solid #4e4e4e;
     border-radius: 0.5rem;
@@ -122,6 +159,7 @@ body {
 }
 
 .card-title {
+    font-family: 'Gilmer Medium', 'Roboto';
     position: relative;
     font-weight: 100;
     color: #4e4e4e;
@@ -129,11 +167,18 @@ body {
     margin-left: 80px;
 }
 
+#check-title {
+    margin-top: 1em;
+    margin-left: 50px;
+    margin-right: 0;
+    margin-bottom: 1em;
+}
+
 .text-content {
     float: left;
     margin-left: 48px;
     margin-bottom: 20px;
-    max-width: 44vw;
+    max-width: 42vw;
 }
 
 .content {
@@ -141,15 +186,197 @@ body {
     margin: 20px;
 }
 
+.buttons {
+    margin-left: 0;
+    margin-top: 3em;
+}
+
 .button {
-    float: right;
+    cursor: pointer;
     border: solid 0.5px #4e4e4e;
-    border-radius: 1rem;
-    padding: 5px;
+    border-radius: 0.8rem;
+    padding: 8px;
+}
+
+#save {
+    /*
+    position: absolute;
+    bottom: 0;
+    */
+    margin-left: 3vw;
+    padding-left: 18px;
+    padding-right: 18px;
+    float: left;
+}
+
+#cancel {
+    margin-left: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
+}
+
+#contact {
+    position: absolute;
+    margin-left: 20vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    right: 33vw;
+    float: right;
 }
 
 .button-text {
-    position: relative;
+    cursor: pointer;
     right: 10px;
+    margin: 3px;
+}
+
+.check-button {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
+
+.checked-button {
+    position: absolute;
+    left: 0;
+    opacity: 100;
+}
+
+.checklist {
+    position: relative;
     float: right;
+    margin-top: 2em;
+    margin-right: 2em;
+}
+
+.card-header {
+    margin-top: 40px;
+}
+
+#check-list {
+    width: 50vw;
+}
+
+.header {
+    position: relative;
+    margin-left: 22vw;
+    padding-top: 2em;
+    width: 40%;
+}
+
+.head-text {
+    float: left;
+}
+
+.check-div {
+    width: 40%;
+    float: left;
+}
+
+.grid {
+    position: relative;
+    padding: 2em;
+    margin-left: 15vw;
+}
+
+.row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 10px;
+    margin-left: 3em;
+}
+
+.item {
+    cursor: pointer;
+    position: relative;
+    width: 250px;
+    height: 80px;
+    /*background: rgba(0, 0, 0, 0.1);*/
+    margin: 30px;
+    border: 1px solid #4e4e4e;
+}
+
+.categories {
+    margin: 0.5em;
+}
+
+.amount {
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.expense-detail {
+    opacity: 0;
+    position: absolute;
+    top: 10vh;
+    margin-left: 18vw;
+    width: 60vw;
+    height: 80vh;
+    background-color: white;
+    border: 1px solid #4e4e4e;
+}
+
+.expense-text {
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+#head-cost {
+    float: right;
+    margin-top: 2em;
+}
+
+.head {
+    padding-bottom: 20px;
+}
+
+#expense-list {
+    position: absolute;
+    margin-top: 1em;
+}
+
+#export {
+    cursor: pointer;
+    margin-left: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.date {
+    margin-bottom: 15px;
+    margin-left: 4.2em;
+}
+
+#expense-title {
+    margin-left: 2em;
+    margin-top: 0.8em;
+}
+
+.cost-list {
+    margin-left: 27.5vw;
+}
+
+#cost-list-text {
+    margin-top: 1.5em;
+    margin-right: 2em;
+}
+
+#details {
+    float: right;
+    width: 100px;
+    position: absolute;
+    right: 1em;
+    top: 1.2em;
+    padding-left: 20px;
+    border-radius: 0.3rem;
+}
+
+#cost-text {
+    margin-left: 30vw;
 }

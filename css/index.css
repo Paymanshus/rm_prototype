@@ -188,13 +188,14 @@ select {
 
 .buttons {
     margin-left: 0;
-    margin-top: 3em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .button {
     cursor: pointer;
     border: solid 0.5px #4e4e4e;
-    border-radius: 0.8rem;
+    border-radius: 0.4rem;
     padding: 8px;
 }
 
@@ -203,16 +204,17 @@ select {
     position: absolute;
     bottom: 0;
     */
-    margin-left: 3vw;
-    padding-left: 18px;
-    padding-right: 18px;
+    margin-left: 18vw;
+    padding-left: 1.3em;
+    padding-right: 1.3em;
     float: left;
 }
 
 #cancel {
-    margin-left: 40px;
+    margin-left: 4em;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 1em;
+    padding-left: 1em;
     float: right;
 }
 
@@ -379,4 +381,113 @@ select {
 
 #cost-text {
     margin-left: 30vw;
+}
+
+#checklist-head {
+    margin-left: 19vw;
+}
+
+#done-button {
+    padding-left: 0px;
+}
+
+#done {
+    float: right;
+    width: 100px;
+    position: absolute;
+    right: 1em;
+    top: 1.2em;
+    padding-left: 25px;
+    border-radius: 0.3rem;
+}
+
+.financial-prompt {
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    margin-left: 24vw;
+    width: 40vw;
+    height: 30vh;
+    background-color: white;
+    border: 1px solid #4e4e4e;
+}
+
+.fin-quest {
+    padding: 1em;
+    padding-bottom: 0em;
+}
+
+#prompt {
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+#yes {
+    margin-left: 70%;
+    padding-left: 1.3em;
+    padding-right: 1.3em;
+    float: left;
+}
+
+#no {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    float: right;
+}
+
+.overlay {
+    background-color: gray;
+}
+
+.transaction-overlay {
+    position: absolute;
+    top: 14vh;
+    margin-left: 18vw;
+    width: 60vw;
+    height: 65vh;
+    background-color: white;
+    border: 1px solid #4e4e4e;
+}
+
+.input-label {
+    padding: 1.5em;
+    margin-left: 1em;
+}
+
+.input-label:nth-child(1) {
+    margin-top: 2em;
+}
+
+input {
+    height: 1.5em;
+    z-index: 1;
+}
+
+#title-input {
+    width: 40vw;
+}
+
+#category {
+    width: 8vw;
+    margin-right: 3em;
+}
+
+#invoice {
+    margin-right: 5em;
+}
+
+#submit {
+    float: left;
+    margin-left: 75%;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+}
+
+#cancel-overlay {
+    margin-right: 2em;
+    padding-right: 1.4em;
+    padding-left: 1.4em;
+    float: right;
 }

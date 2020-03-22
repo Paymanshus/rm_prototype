@@ -4,8 +4,7 @@
     <link rel="stylesheet" href="css/index.css" />
     <meta name="viewport" content="width = device-width, initial-scale= 1.0" />
     <script src="https://kit.fontawesome.com/18264bfb6e.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="scripts/admin.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
     <title>Admin Page</title>
 </head>
 
@@ -28,7 +27,7 @@
                 <div class="check-div">
                     <h5 class="card-title" id="check-title">Task 1</h5>
                 </div>
-                <div class="button" id="done">
+                <div class="button" id="done" onclick="donePopup()">
                     <div class="button-text" id="done-text">Done</div>
                 </div>
             </div>
@@ -36,7 +35,7 @@
                 <div class="check-div">
                     <h5 class="card-title" id="check-title">Task 2</h5>
                 </div>
-                <div class="button" id="done">
+                <div class="button" id="done" onclick="donePopup()">
                     <div class="button-text" id="done-text">Done</div>
                 </div>
             </div>
@@ -59,7 +58,7 @@
         </div>
 
 
-        <div class="financial-prompt">
+        <div class="financialprompt" id="done-popup">
             <p class="fin-quest">Was there a financial transaction</p>
             <div class="buttons" id="prompt">
                 <div class="button" id="yes">Yes</div>
@@ -90,6 +89,7 @@
             </div>
         </div>
     </div>
+    <script src="scripts/admin.js"></script>
 </body>
 
 </html>

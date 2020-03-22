@@ -236,7 +236,7 @@ select {
 .check-button {
     position: absolute;
     left: 0;
-    opacity: 0;
+    visibility: hidden;
 }
 
 .checked-button {
@@ -294,10 +294,11 @@ select {
 .item {
     cursor: pointer;
     position: relative;
-    width: 250px;
-    height: 80px;
+    z-index: 1;
+    width: 280px;
+    height: 100px;
     /*background: rgba(0, 0, 0, 0.1);*/
-    margin: 30px;
+    margin: 0px;
     border: 1px solid #4e4e4e;
 }
 
@@ -314,7 +315,7 @@ select {
 }
 
 .expense-detail {
-    opacity: 0;
+    visibility: hidden;
     position: absolute;
     top: 10vh;
     margin-left: 18vw;
@@ -393,6 +394,8 @@ select {
 
 #done {
     float: right;
+    cursor: pointer;
+    z-index: 1;
     width: 100px;
     position: absolute;
     right: 1em;
@@ -401,8 +404,8 @@ select {
     border-radius: 0.3rem;
 }
 
-.financial-prompt {
-    opacity: 0;
+.financialprompt {
+    visibility: hidden;
     position: absolute;
     top: 30%;
     margin-left: 24vw;
@@ -442,6 +445,7 @@ select {
 }
 
 .transaction-overlay {
+    visibility: hidden;
     position: absolute;
     top: 14vh;
     margin-left: 18vw;
@@ -490,4 +494,36 @@ input {
     padding-right: 1.4em;
     padding-left: 1.4em;
     float: right;
+}
+
+.dash-list {
+    margin: 0.5em;
+    margin-left: 0.8em;
+    margin-top: 0.8em;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.remaining {
+    float: right;
+    margin-right: 1em;
+    margin-top: 0.8em;
+}
+
+#dashboard {
+    margin-left: 16vw;
+}
+
+.dash-overlay {
+    margin: 30px;
+    /*background-color: #2da4c1;*/
+}
+
+#expense-button {
+    cursor: pointer;
+    z-index: 1;
+    margin-top: 2em;
+    margin-left: 24%;
+    width: 12em;
+    padding-left: 2em;
 }

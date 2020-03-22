@@ -1,8 +1,4 @@
-$(document).ready(function() {
-
-    $("button-text").click(function() {
-        $("checked-button").toggleClass("check-button")
-        $("check-button").toggleClass("checked-button")
-    });
-
-});
+function donePopup() {
+    var popup = document.getElementById("done-popup");
+    financialprompt.classList.toggle("show");
+}

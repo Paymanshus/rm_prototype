@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="css/index.css" />
+    <meta name="viewport" content="width = device-width, initial-scale= 1.0" />
+    <script src="https://kit.fontawesome.com/18264bfb6e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/admin.js"></script>
+    <title>Admin Page</title>
+</head>
+
+<body>
+    <div class="side-menu">
+        <h4 class="workamp-text">WORKAMP</h4>
+        <div class="avatar">
+            <img src="src/admin.jpg.png" alt="Admin Profile Image" class="icon">
+            <h4 class="avatar-text">ADMIN</h4>
+        </div>
+        <div class="menu-select">
+            <h4 class="menu-opt" id="selected">TASKS TODAY</h4>
+            <h4 class="menu-opt">UPCOMING</h4>
+        </div>
+    </div>
+
+    <div class="grid" id="dashboard">
+        <div class="row">
+            <div class="dash-overlay">
+                <div class="item" id="pic1">
+                    <div class="dash-list">Daily Checklist</div>
+                    <div class="remaining">15 remaining</div>
+                </div>
+            </div>
+            <div class="dash-overlay">
+                <div class="item" id="pic2">
+                    <div class="dash-list">Weekly Checklist</div>
+                    <div class="remaining">5 remaining</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="dash-overlay">
+                <div class="item" id="pic3">
+                    <div class="dash-list">Monthly Checklist</div>
+                    <div class="remaining">5 remaining</div>
+                </div>
+            </div>
+            <div class="dash-overlay">
+                <div class="item" id="pic4">
+                    <div class="dash-list">Tasks</div>
+                    <div class="remaining">5 remaining</div>
+                </div>
+            </div>
+        </div>
+        <div class="button" id="expense-button">
+            <div class="button-text" id="expense-button-text">Record Expense</div>
+        </div>
+    </div>
+
+
+    <div class="expense-detail">
+        <p class="expense-text"><b>Title: </b>Cafe coffee day coffee beans</p>
+        <p class="expense-text"><b>Amount: </b>Rs 2500/-</p>
+        <p class="expense-text"><b>Category:</b> Beverages &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Date of Payment:</b> 7th March 2019</p>
+        <p class="expense-text"><b>Invoice ID: </b>9876#### &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;&nbsp;<b>GST No:</b> GA3456HT####</p>
+        <p class="expense-text"><b>Payment Mode:</b> Cash</p>
+
+
+    </div>
+
+</body>
+
+</html>

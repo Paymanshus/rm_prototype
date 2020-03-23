@@ -30,6 +30,7 @@
 a {
     color: inherit;
     text-decoration: inherit;
+    margin: 0;
 }
 
 h1 {
@@ -298,7 +299,7 @@ select {
     width: 280px;
     height: 100px;
     /*background: rgba(0, 0, 0, 0.1);*/
-    margin: 0px;
+    margin: 1.2em;
     border: 1px solid #4e4e4e;
 }
 
@@ -404,7 +405,7 @@ select {
     border-radius: 0.3rem;
 }
 
-.financialprompt {
+.financial-prompt {
     visibility: hidden;
     position: absolute;
     top: 30%;
@@ -526,4 +527,8 @@ input {
     margin-left: 24%;
     width: 12em;
     padding-left: 2em;
+}
+
+.dash-link {
+    margin: 0;
 }

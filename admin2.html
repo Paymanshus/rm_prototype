@@ -17,10 +17,15 @@
                 <h4 class="avatar-text">ADMIN</h4>
             </div>
             <div class="menu-select">
-                <h4 class="menu-opt" id="selected">TASKS TODAY</h4>
-                <h4 class="menu-opt">UPCOMING</h4>
+                <a href="admin_dash.html">
+                    <h4 class="menu-opt"">DASHBOARD</h4>
+                </a>
+                <a href="admin2.html">
+                    <h4 class="menu-opt" id="selected">UPCOMING</h4>
             </div>
+            </a>
         </div>
+
         <h3 class="header" id="checklist-head">Tasks List</h3>
         <div class="cards-list">
             <div class="card" id="check-list">
@@ -48,21 +53,24 @@
                 </div>
             </div>
             <div class="buttons">
-                <div class="button" id="save">
-                    <div class="button-text" id="save-text">Save</div>
-                </div>
+                <a href="#" class="js-modal-show-fin">
+                    <div class="button" id="save">
+                        <div class="button-text" id="save-text">Save</div>
+                    </div>
+                </a>
                 <div class="button" id="cancel">
                     <div class="button-text" id="cancel-text">Cancel</div>
                 </div>
             </div>
         </div>
 
-
-        <div class="financialprompt" id="done-popup">
-            <p class="fin-quest">Was there a financial transaction</p>
-            <div class="buttons" id="prompt">
-                <div class="button" id="yes">Yes</div>
-                <div class="button" id="no">No</div>
+        <div class="financial-prompt hidden l-modal js-modal-financial" id="done-popup">
+            <div class="l-modal_shadow js-modal-hide-fin">
+                <p class="fin-quest">Was there a financial transaction</p>
+                <div class="buttons" id="prompt">
+                    <div class="button" id="yes">Yes</div>
+                    <div class="button" id="no">No</div>
+                </div>
             </div>
         </div>
 

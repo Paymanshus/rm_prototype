@@ -10,109 +10,78 @@
 </head>
 
 <body>
-    <div>
-        <div class="side-menu">
-            <h4 class="workamp-text">WORKAMP</h4>
-            <div class="avatar">
-                <img src="src/admin.jpg.png" alt="Admin Profile Image" class="icon">
-                <h4 class="avatar-text">ADMIN</h4>
-            </div>
-            <div class="menu-select">
-                <a href="admin_dash.html">
+    <div class="side-menu">
+        <h4 class="workamp-text">WORKAMP</h4>
+        <div class="avatar">
+            <img src="src/admin.jpg.png" alt="Admin Profile Image" class="icon">
+            <h4 class="avatar-text">ADMIN</h4>
+        </div>
+        <div class="menu-select">
+            <a href="admin_dash.html">
                     <h4 class="menu-opt"">DASHBOARD</h4>
                 </a>
-                <a href="admin2.html">
-                    <h4 class="menu-opt" id="selected">UPCOMING</h4>
+            <a href="admin2.html">
+                <h4 class="menu-opt" id="selected">UPCOMING</h4>
+        </div>
+        </a>
+    </div>
+
+    <h3 class="header" id="checklist-head">Tasks List</h3>
+    <div class="cards-list">
+        <div class="card" id="check-list">
+            <div class="check-div">
+                <h5 class="card-title" id="check-title">Task 1</h5>
             </div>
+            <a href="finance.html" class="js-modal-show-fin">
+                <div class="button js-modal-show-fin" id="done">
+                    <div class="button-text" id="done-text">Done</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" id="check-list">
+            <div class="check-div">
+                <h5 class="card-title" id="check-title">Task 2</h5>
+            </div>
+            <a href="finance.html" class="js-modal-show-fin">
+                <div class="button" id="done">
+                    <div class="button-text" id="done-text">Done</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" id="check-list">
+            <div class="check-div">
+                <h5 class="card-title" id="check-title">Task 3</h5>
+            </div>
+            <a href="finance.html" class="js-modal-show-fin">
+                <div class="button" id="done">
+                    <div class="button-text" id="done-text">Done</div>
+                </div>
             </a>
         </div>
 
-        <h3 class="header" id="checklist-head">Tasks List</h3>
-        <div class="cards-list">
-            <div class="card" id="check-list">
-                <div class="check-div">
-                    <h5 class="card-title" id="check-title">Task 1</h5>
+        <div class="buttons">
+            <div class="button-container">
+                <div class="button" id="save">
+                    <div class="button-text" id="save-text">Save</div>
                 </div>
-                <a href="#" class="js-modal-show-fin">
-                    <div class="button js-modal-show-fin" id="done">
-                        <div class="button-text" id="done-text">Done</div>
-                    </div>
-                </a>
             </div>
-            <div class="card" id="check-list">
-                <div class="check-div">
-                    <h5 class="card-title" id="check-title">Task 2</h5>
+            <div class="button-container">
+                <div class="button" id="cancel">
+                    <div class="button-text" id="cancel-text">Cancel</div>
                 </div>
-                <a href="transact.html" class="js-modal-show-fin">
-                    <div class="button" id="done">
-                        <div class="button-text" id="done-text">Done</div>
-                    </div>
-                </a>
             </div>
-            <div class="card" id="check-list">
-                <div class="check-div">
-                    <h5 class="card-title" id="check-title">Task 3</h5>
-                </div>
-                <a href="transact.html" class="js-modal-show-fin">
-                    <div class="button" id="done">
-                        <div class="button-text" id="done-text">Done</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="buttons">
-                <div class="button-container">
-                    <div class="button" id="save">
-                        <div class="button-text" id="save-text">Save</div>
-                    </div>
-                </div>
-                <div class="button-container">
-                    <div class="button" id="cancel">
-                        <div class="button-text" id="cancel-text">Cancel</div>
-                    </div>
-                </div>
-                <div class="button-container">
+            <div class="button-container">
+                <a href="admin_contact.html">
                     <div class="button" id="contact">
                         <div class="button-text" id="contact-text">Contact Vendor</div>
                     </div>
-                </div>
-            </div>
-
-            <div class="financial-prompt hidden l-modal js-modal-financial" id="done-popup">
-                <div class="l-modal-shadow js-modal-hide-fin">
-                    <p class="fin-quest">Was there a financial transaction</p>
-                    <div class="buttons" id="prompt">
-                        <div class="button" id="yes">Yes</div>
-                        <div class="button" id="no">No</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="transaction-overlay">
-                <p class="input-label">Title: <input type="text" id="title-input"></input>
-                </p>
-                <p class="input-label">Amount: <b>Rs</b><input type="text" id="amount-input"></p>
-                <p class="input-label">Category <select class="options" id="category">
-                <option value="0">Housekeeping</option>
-                <option value="1">Furniture</option>
-                </select> Date of Payment: <input type="date" id="date">
-                </p>
-                <p class="input-label">Invoice ID: <input type="text" id="invoice"> GST no. <input type="text" id="gst">
-                </p>
-                <p class="input-label">Payment mode
-                    <select class="options" id="payment">
-                    <option value="0">Cash</option>
-                    <option value="1">Cheque</option>
-                    </select>
-                </p>
-                <div class="buttons">
-                    <div class="button" id="submit">Submit</div>
-                    <div class="button" id="cancel-overlay">Class</div>
-                </div>
+                </a>
             </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="scripts/admin.js"></script>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/admin.js"></script>
 </body>
 
 </html>

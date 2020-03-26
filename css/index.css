@@ -80,6 +80,11 @@ select {
     width: 80px;
 }
 
+table {
+    border-spacing: 1em;
+    margin-left: 0;
+}
+
 .side-menu {
     position: fixed;
     float: left;
@@ -246,7 +251,7 @@ select {
 .check-button {
     position: absolute;
     left: 0;
-    visibility: hidden;
+    visibility: show;
 }
 
 .checked-button {
@@ -329,7 +334,6 @@ select {
 }
 
 .expense-detail {
-    visibility: hidden;
     position: absolute;
     top: 10vh;
     margin-left: 18vw;
@@ -359,10 +363,12 @@ select {
 }
 
 #export {
+    width: 10em;
     cursor: pointer;
-    margin-left: 15px;
+    margin-left: 14px;
     padding-left: 25px;
     padding-right: 25px;
+    border-radius: 0.2rem;
 }
 
 .date {
@@ -430,7 +436,7 @@ select {
 }
 
 .financial-prompt {
-    visibility: hidden;
+    visibility: show;
     z-index: 1;
     position: absolute;
     top: 30%;
@@ -471,7 +477,7 @@ select {
 }
 
 .transaction-overlay {
-    visibility: hidden;
+    visibility: show;
     z-index: 1;
     position: absolute;
     top: 14vh;
@@ -552,6 +558,7 @@ input {
 
 .item:hover {
     background-color: #2da4c1;
+    color: white;
 }
 
 #expense-button {
@@ -663,4 +670,72 @@ input {
 
 #sec {
     margin-right: 43vw;
+}
+
+.button-container {
+    width: 30%;
+}
+
+.complete {
+    background-color: green;
+    color: white;
+}
+
+.pending {
+    background-color: red;
+    color: white;
+}
+
+.inference-detail {
+    width: 30%;
+    float: left;
+    margin-right: 2em;
+}
+
+.inference-header {
+    margin-top: 1em;
+}
+
+.inv {
+    width: 240px;
+}
+
+.month-expense {
+    margin-left: 21.5vw;
+}
+
+.header {
+    font-weight: 600;
+}
+
+.first {
+    width: 12vw;
+}
+
+.login-box {
+    height: 20vh;
+    width: 80vw;
+    background-color: #4e4e4e;
+    color: white;
+    padding-top: 3em;
+}
+
+.shadow-overlay {
+    background: rgb(22, 22, 22, 0.9);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-table {
+    margin-top: 2em;
+    margin-left: 2vw;
+    border-spacing: 1.5em;
+}
+
+#close {
+    display: inline-block;
+    position: absolute;
+    bottom: 5vh;
+    left: 3em;
 }

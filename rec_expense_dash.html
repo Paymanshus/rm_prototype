@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="css/index.css" />
+    <meta name="viewport" content="width = device-width, initial-scale= 1.0" />
+    <script src="https://kit.fontawesome.com/18264bfb6e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/admin.js"></script>
+    <title>Admin Page</title>
+</head>
+
+<body>
+    <div class="shadow-overlay">
+        <div class="side-menu">
+            <h4 class="workamp-text">WORKAMP</h4>
+            <div class="avatar">
+                <img src="src/admin.jpg.png" alt="Admin Profile Image" class="icon">
+                <h4 class="avatar-text">ADMIN</h4>
+            </div>
+            <div class="menu-select">
+                <a href="admin_dash.html">
+                    <h4 class="menu-opt" id="selected">DASHBOARD</h4>
+                </a>
+                <a href="admin2.html">
+                    <h4 class="menu-opt">UPCOMING</h4>
+                </a>
+                <a href="tasks_dash.html">
+                    <h4 class="menu-opt">CHECK INVENTORY</h4>
+                </a>
+                <a href="admin2.html">
+                    <h4 class="menu-opt">VENDOR LIST</h4>
+                </a>
+            </div>
+            </a>
+        </div>
+
+        <div class="grid" id="dashboard">
+            <div class="row">
+                <a href="tasks_dash.html" class="dash-link">
+                    <div class="dash-overlay">
+                        <div class="item" id="pic1">
+                            <div class="dash-list">Daily Checklist</div>
+                            <div class="remaining">15 remaining</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="week_dash.html">
+                    <div class="dash-overlay">
+                        <div class="item" id="pic2">
+                            <div class="dash-list">Weekly Checklist</div>
+                            <div class="remaining">5 remaining</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="tasks_dash.html">
+                    <div class="dash-overlay">
+                        <div class="item" id="pic3">
+                            <div class="dash-list">Monthly Checklist</div>
+                            <div class="remaining">5 remaining</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="task_select.html" class="dash-link">
+                    <div class="dash-overlay">
+                        <div class="item" id="pic4">
+                            <div class="dash-list">Tasks</div>
+                            <div class="remaining">5 remaining</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <a href="rec_expense_dash.html">
+                <div class="button" id="expense-button">
+                    <div class="button-text" id="expense-button-text">Record Expense</div>
+                </div>
+            </a>
+        </div>
+        <div class="transaction-overlay" id="transact">
+            <p class="input-label">Title: <input type="text" id="title-input"></input>
+            </p>
+            <p class="input-label">Amount: <b>Rs</b><input type="text" id="amount-input"></p>
+            <p class="input-label">Category <select class="options" id="category">
+            <option value="0">Housekeeping</option>
+            <option value="1">Furniture</option>
+            </select> Date of Payment: <input type="date" id="date">
+            </p>
+            <p class="input-label">Invoice ID: <input type="text" id="invoice"> GST no. <input type="text" id="gst">
+            </p>
+            <p class="input-label">Payment mode
+                <select class="options" id="payment">
+                <option value="0">Cash</option>
+                <option value="1">Cheque</option>
+                </select>
+            </p>
+            <div class="buttons">
+                <div class="button" id="submit">Submit</div>
+                <a href="admin_dash.html">
+                    <div class="button" id="cancel-overlay">Cancel</div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

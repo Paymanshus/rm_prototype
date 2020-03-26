@@ -18,65 +18,80 @@
         </div>
         <div class="menu-select">
             <a href="admin_dash.html">
-                <h4 class="menu-opt">DASHBOARD</h4>
-            </a>
+                    <h4 class="menu-opt"">DASHBOARD</h4>
+                </a>
             <a href="admin2.html">
-                <h4 class="menu-opt">UPCOMING</h4>
+                <h4 class="menu-opt" id="selected">UPCOMING</h4>
         </div>
         </a>
     </div>
 
-    <div class="grid" id="dashboard">
-        <div class="row">
-            <a href="admin2.html" class="dash-link">
-                <div class="dash-overlay">
-                    <div class="item" id="pic1">
-                        <div class="dash-list">Daily Checklist</div>
-                        <div class="remaining">15 remaining</div>
+    <div class="cards-list">
+        <div class="top-line">
+            <div class="sec-container">
+                <h3 class="complete-details">
+                    Tasks completed this month
+                </h3>
+                <div class="bar-container">
+                    <div class="bar-outer">
+                        <div class="bar-inner">
+                        </div>
                     </div>
                 </div>
-            </a>
-            <a href="admin2.html">
-                <div class="dash-overlay">
-                    <div class="item" id="pic2">
-                        <div class="dash-list">Weekly Checklist</div>
-                        <div class="remaining">5 remaining</div>
-                    </div>
+                <p class="percent">78%</p>
+            </div>
+
+
+            <div class="month">
+                <select class="checklist month-check">
+                    <option value="0">Select</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                </select>
+            </div>
+        </div>
+
+        <a href="lead-task.html">
+            <div class="button" id="task-det">
+                <div class="button-text" id="td-button">Check Task Details</div>
+            </div>
+        </a>
+        <div class="expense-sec">
+            <p class="sec-head">
+                Total Inventory Expense
+                <b>Rs 25,343</b>
+            </p>
+            <!--<h3 class="amount" id="sec">
+
+            </h3>-->
+            <p class="sec-desc">
+                You have spent the most on coffee(Rs. 12,231) this month
+            </p>
+            <a href="lead_inv.html">
+                <div class="button" id="task-det">
+                    <div class="button-text" id="td-button">See all inventory details</div>
                 </div>
             </a>
         </div>
-        <div class="row">
-            <a href="admin2.html">
-                <div class="dash-overlay">
-                    <div class="item" id="pic3">
-                        <div class="dash-list">Monthly Checklist</div>
-                        <div class="remaining">5 remaining</div>
-                    </div>
+
+        <div class="expense-sec">
+            <p class="sec-head">
+                Total Inventory Expense
+                <b>Rs 25,343</b>
+            </p>
+            <!--<h3 class="amount" id="sec">
+
+            </h3>-->
+            <p class="sec-desc">
+                You have spent Rs. 12,231 less than the monthly average
+            </p>
+            <a href="lead_fin.html">
+                <div class="button" id="task-det">
+                    <div class="button-text" id="td-button">See all financial details</div>
                 </div>
             </a>
-            <a href="tasks_dash.html" class="dash-link">
-                <div class="dash-overlay">
-                    <div class="item" id="pic4">
-                        <div class="dash-list">Tasks</div>
-                        <div class="remaining">5 remaining</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="button" id="expense-button">
-            <div class="button-text" id="expense-button-text">Record Expense</div>
         </div>
     </div>
-
-
-    <div class="expense-detail">
-        <p class="expense-text"><b>Title: </b>Cafe coffee day coffee beans</p>
-        <p class="expense-text"><b>Amount: </b>Rs 2500/-</p>
-        <p class="expense-text"><b>Category:</b> Beverages &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Date of Payment:</b> 7th March 2019</p>
-        <p class="expense-text"><b>Invoice ID: </b>9876#### &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;&nbsp;<b>GST No:</b> GA3456HT####</p>
-        <p class="expense-text"><b>Payment Mode:</b> Cash</p>
-
-
     </div>
 
 </body>

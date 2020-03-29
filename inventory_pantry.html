@@ -6,7 +6,7 @@
     <script src="https://kit.fontawesome.com/18264bfb6e.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="scripts/admin.js"></script>
-    <title>Admin Page</title>
+    <title>Weekly Checklist</title>
 </head>
 
 <body>
@@ -22,47 +22,47 @@
             </a>
             <a href="admin2.html">
                 <h4 class="menu-opt">UPCOMING</h4>
+            </a>
+            <a href="inventory_dash.html">
+                <h4 class="menu-opt" id="selected">CHECK INVENTORY</h4>
+            </a>
         </div>
+
         </a>
     </div>
 
-    <h3 class="header" id="checklist-head">Completed Tasks</h3>
-    <div class="cards-list" id="expense-list">
-        <div class="card" id="complete-list">
+    <h3 class="header" id="checklist-head">Pantry</h3>
+    <div class="cards-list">
+        <div class="card" id="check-list">
             <div class="check-div">
-                <h5 class="card-title" id="expense-title">Task 1</h5>
+                <h5 class="card-title" id="check-title">Coffee</h5>
             </div>
-            <div class="cost-list" id="time">
-                <p class="cost" id="time-list-text">Completed at 9:42 am</h3>
-            </div>
-            <div class="button" id="not-done">
-                <div class="button-text" id="detail-text">Not Done</div>
+            <div class="week-inventory">
+                <input type="text" class="inventory-input correct"> Units
             </div>
         </div>
-
-        <div class="card" id="complete-list">
+        <div class="card" id="check-list">
             <div class="check-div">
-                <h5 class="card-title" id="expense-title">Task 1</h5>
+                <h5 class="card-title" id="check-title">Paper Cup</h5>
             </div>
-            <div class="cost-list" id="time">
-                <p class="cost" id="time-list-text">Completed at 9:42 am</h3>
-            </div>
-            <div class="button" id="not-done">
-                <div class="button-text" id="detail-text">Not Done</div>
+            <div class="week-inventory">
+                <input type="text" class="inventory-input"> Units
             </div>
         </div>
-
-
-
-
-
+        <div class="card" id="check-list">
+            <div class="check-div">
+                <h5 class="card-title" id="check-title">Check Coffee</h5>
+            </div>
+            <div class="week-inventory">
+                <input type="text" class="inventory-input"> Units
+            </div>
+        </div>
         <div class="buttons">
-            <div class="button" id="export">
-                <div class="button-text" id="export-text">Export Excel</div>
+            <div class="button" id="contact">
+                <div class="button-text" id="submit-text">Submit</div>
             </div>
         </div>
     </div>
-
 
 </body>
 

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="/static/content/index.css" />
+    <meta name="viewport" content="width = device-width, initial-scale= 1.0" />
+    <script src="https://kit.fontawesome.com/18264bfb6e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/admin.js"></script>
+    <title>Admin Page</title>
+</head>
+
+<body>
+    <div class="side-menu">
+        <h4 class="workamp-text">WORKAMP</h4>
+        <div class="menu-select">
+            <a href="">
+                <h4 class="menu-opt">DASHBOARD</h4>
+            </a>
+            <a href="">
+                <h4 class="menu-opt">UPCOMING</h4>
+        </div>
+        </a>
+    </div>
+    <h3 class="header">Tasks Details</h3>
+    <div class="cards-list">
+
+
+        <div class="row">
+            <a href="expense_bev.html">
+                <div class="item complete" id="pic1">
+                    <div class="categories">Tasks Completed</div>
+                    <div class="amount" id="taskno">{{done_task}}</div>
+                </div>
+            </a>
+            <a href="expense_bev.html">
+                <div class="item pending" id="pic2">
+                    <div class="categories">Total Pending</div>
+                    <div class="amount">{{notdone_task}}</div>
+                </div>
+            </a>
+        </div>
+
+        <h3 class="inference-header">
+            Most frequented task raised
+        </h3>
+        <div class="inference-container">
+            <p class="inference-detail">{{maxact}}</p>
+            <p class="inference">{{maxactcount}}</p>
+        </div>
+
+
+        <h3 class="inference-header">
+            Most delays occurred
+        </h3>
+        <div class="inference-container">
+            <p class="inference-detail">Reception - Lights - Not Okay</p>
+            <p class="inference">5 days</p>
+        </div>
+
+        <h3 class="inference-header">
+            Area most affected
+        </h3>
+        <div class="inference-container">
+            <p class="inference-detail">{{maxtask}}</p>
+            <p class="inference">{{maxcount}}</p>
+        </div>
+
+        <div class="buttons">
+            <div class="button" id="export">
+                <div class="button-text" id="export-text">Export Excel</div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

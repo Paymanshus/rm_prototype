@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="/static/content/index.css" />
+    <meta name="viewport" content="width = device-width, initial-scale= 1.0" />
+    <script src="https://kit.fontawesome.com/18264bfb6e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/admin.js"></script>
+    <title>Admin Page</title>
+</head>
+
+<body>
+    <div class="side-menu">
+        <h4 class="workamp-text">WORKAMP</h4>
+        <div class="menu-select">
+            <a href="">
+                <h4 class="menu-opt">DASHBOARD</h4>
+            </a>
+            <a href="">
+                <h4 class="menu-opt" id="selected">EXPENSES</h4>
+            </a>
+        </div>
+
+    </div>
+
+
+
+    <div class="grid">
+        <div class="row">
+            <a href="{{url_for('expense_inv')}}">
+                <div class="item inv" id="pic1">
+                    <div class="categories">Inventory</div>
+                    <div class="amount">Rs. {{total_inv}}</div>
+                </div>
+            </a>
+            <a href="{{url_for('expense_water')}}">
+                <div class="item inv" id="pic2">
+                    <div class="categories">Water</div>
+                    <div class="amount">Rs. {{total_water}}</div>
+                </div>
+            </a>
+            <a href="{{url_for('expense_int')}}">
+                <div class="item inv" id="pic3">
+                    <div class="categories">Internet</div>
+                    <div class="amount">Rs. {{total_int}}</div>
+                </div>
+            </a>
+            <a href="{{url_for('expense_rent')}}">
+                <div class="item inv" id="pic4">
+                    <div class="categories">Rent</div>
+                    <div class="amount">Rs. {{total_rent}}</div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <table class="month-expense">
+        <tr class="table-header">
+            <td class="first">Money spent on items</td>
+            <td>This Month</td>
+            <td>Last Month</td>
+            <td>Monthly Average</td>
+        </tr>
+        <tr>
+            <td class="first">Electricity</td>
+            <td>{{totale}}</td>
+            <td>{{totaleold}}</td>
+            <td>{{avge}}</td>
+        </tr>
+        <tr>
+            <td class="first">Salary of AMC</td>
+            <td>{{totals}}</td>
+            <td>{{totalsold}}</td>
+            <td>{{avgs}}</td>
+        </tr>
+        <tr>
+            <td class="first">Other Total Expenditure</td>
+            <td>{{total}}</td>
+            <td>{{totalold}}</td>
+            <td>{{avg}}</td>
+        </tr>
+        <tr>
+            <td class="first">Other Inventory Expenditure</td>
+            <td>{{totali}}</td>
+            <td>{{totaliold}}</td>
+            <td>{{avgi}}</td>
+        </tr>
+        <tr>
+            <td class="first">Other Expenses Expenditure</td>
+            <td>{{totalex}}</td>
+            <td>{{totalexold}}</td>
+            <td>{{avgex}}</td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>
